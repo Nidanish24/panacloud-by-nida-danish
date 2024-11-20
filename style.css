@@ -1,0 +1,932 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+.imgDiv {
+  position: absolute;
+  z-index: -1;
+  /* display: none; */
+}
+
+.imgDiv img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.header {
+  width: 100%;
+}
+
+.headerTopDiv {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212121;
+}
+
+.socialIconDiv {
+  width: 290px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 42px;
+  gap: 6px;
+}
+
+.circleIcon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgb(13, 13, 14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phoneIconDiv {
+  width: 542px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.phoneIconDiv p {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.phoneIconDiv .callBtn {
+  margin-left: 10px;
+  padding: 6px 8px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  background-color: #a2d84c;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.navBar {
+  width: 100%;
+  height: 117px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar img {
+  margin-left: 52px;
+  width: 205px;
+}
+
+.navList {
+  height: 100%;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 39px;
+}
+
+.navList li {
+  list-style: none;
+}
+
+.navList li a {
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+.sliderImgDiv {
+  width: 100%;
+  height: 720px;
+}
+
+/* swiper code */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.img_content {
+  width: 100%;
+  height: 340px;
+  position: absolute;
+  top: 225px;
+  left: 0;
+}
+
+.img_contentTopDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftDiv {
+  width: 475px;
+  height: 98px;
+  background-color: #a2d84c;
+}
+
+.rightDiv {
+  width: 475px;
+  height: 98px;
+  background-color: #a2d84c;
+}
+
+.img_content h1 {
+  font-size: 93px;
+  color: white;
+}
+
+.img_contentBottomDiv {
+  width: 100%;
+  height: 193px;
+  margin-top: 37px;
+  text-align: center;
+}
+
+.img_contentBottomDiv pre {
+  font-size: 30px;
+  color: white;
+}
+
+.buttonDiv button {
+  margin-top: 53px;
+  font-size: 24px;
+  padding: 18px 60px;
+  border: none;
+  outline: none;
+  background-color: #febd19;
+  font-weight: 600;
+}
+
+.advantageDiv {
+  width: 100%;
+  height: 674px;
+  background-color: white;
+}
+
+.adv_top {
+  width: 100%;
+  height: 175px;
+  text-align: center;
+}
+
+.adv_top h1 {
+  font-size: 60px;
+  margin-top: 50px;
+  color: #668e19;
+}
+
+.sp1 {
+  color: black;
+}
+
+.advantageDiv pre {
+  margin-top: 5px;
+  font-size: 21px;
+  color: rgb(168, 163, 163);
+}
+
+.bottomIcons {
+  width: 100%;
+  height: 355px;
+  margin-top: 5px;
+  padding-left: 86px;
+  display: flex;
+  gap: 53px;
+}
+
+.iconsDiv {
+  height: 100%;
+  width: 290px;
+  text-align: center;
+}
+
+.roundDiv {
+  width: 227px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: #d4cece;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.iconH1 {
+  font-size: 24px;
+  margin-top: 25px;
+  font-weight: 600;
+}
+
+.iconsDiv p {
+  margin-top: 3px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #c3c3bd;
+}
+
+.aboutUs_Div {
+  width: 100%;
+  height: 635px;
+  background-image: url("./pics/about.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.aboutUs_Div h1 {
+  color: #668e19;
+  font-size: 62px;
+  font-weight: 600;
+}
+
+.aboutUs_Div .paraDiv {
+  margin-top: 34px;
+  margin-left: 113px;
+  width: 705px;
+  height: 313px;
+}
+
+.aboutUs_Div .paraDiv p {
+  color: #0a0a0a;
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+
+.aboutUs_Div .buttonDiv {
+  margin-left: 115px;
+}
+
+.servicesDiv {
+  width: 100%;
+  height: 645px;
+  /* border: 2px solid red; */
+  background-color: white;
+}
+
+.servicesDiv h1 {
+  margin-top: 47px;
+  font-size: 60px;
+  font-weight: 600;
+  color: #668e19;
+}
+
+.servicesDiv pre {
+  margin-top: 17px;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(178, 185, 183);
+}
+
+.servicesBottomDiv {
+  width: 100%;
+  height: 388px;
+  padding-top: 0px;
+  /* border: 2px solid red; */
+  padding-left: 110px;
+  display: flex;
+  gap: 28px;
+}
+
+.starCardDiv {
+  position: relative;
+  margin-top: 95px;
+  height: 291px;
+  width: 382px;
+  /* border: 2px solid red; */
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f2f2f2;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+  }
+}
+
+.roundStar {
+  position: absolute;
+  top: -53px;
+  left: 143px;
+  height: 100px;
+  width: 100px;
+  /* border: 2px solid blue; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #febd19;
+}
+
+.starCardDiv h1 {
+  font-size: 23px;
+  margin-top: 84px;
+  font-weight: 600;
+  color: black;
+}
+
+.starCardDiv pre {
+  color: #adb3b3;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 7px;
+  margin-bottom: 27px;
+}
+
+.starCardDiv a {
+  color: #8ec63f;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.portfolioDiv {
+  height: 960px;
+  width: 100%;
+  /* border: 2px solid red; */
+  text-align: center;
+  background-color: black;
+}
+
+.portfolioTopDiv {
+  width: 100%;
+  height: 228px;
+  /* border: 2px solid blue; */
+  text-align: center;
+}
+
+.portfolioTopDiv h1 {
+  font-size: 62px;
+  font-weight: 600;
+  color: rgb(96, 137, 35);
+}
+
+.portfolioTopDiv pre {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin-top: 18px;
+}
+
+.portfolioTopDiv ul {
+  /* border: 2px solid yellow; */
+  height: 93px;
+  display: flex;
+  gap: 34px;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolioTopDiv ul li {
+  list-style: none;
+  display: inline-block;
+  margin-bottom: -7px;
+}
+
+.portfolioTopDiv ul li a {
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 600;
+  color: white;
+
+  &:hover {
+    color: #febd19;
+  }
+}
+
+.portfolioBottomDiv {
+  width: 100%;
+  height: auto;
+  /* border: 2px solid red; */
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto;
+}
+
+.portCard {
+  width: 319px;
+  height: 319px;
+  /* border: 2px solid yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #ef4136;
+  }
+}
+
+.c1 {
+  background-color: white;
+}
+
+.c2 {
+  background-color: #5e5e5e;
+}
+
+.c3 {
+  background-color:  #d2d3d5;
+}
+
+.c4 {
+  background-color:  #838383;
+}
+
+.c5 {
+  background-color: white;
+}
+
+.c6 {
+  background-color: #a3a3a3;
+}
+
+.c7 {
+  background-color: #d2d3d5;
+}
+
+.c8 {
+  background-color: white;
+}
+
+.c9 {
+  background-color: #838383;
+}
+
+.c10 {
+  background-color: #5e5e5e;
+}
+
+.processDiv{
+  width: 100%;
+  height: 695px;
+  border: 2px solid transparent;
+  text-align: center;
+}
+
+.processDiv h1{
+  font-size: 57px;
+  font-weight: 600;
+  color: rgb(96, 137, 35);
+  margin-top: 103px;
+}
+
+.processDiv pre{
+  font-size: 19px;
+  font-weight: 500;
+  color: rgb(159, 156, 156);
+  margin-top: 18px;
+  margin-bottom: 52px;
+}
+
+.processIconsDiv{
+  width: 1610px;
+  height: 335px;
+  /* border: 2px solid red; */
+  margin: auto;
+  display: flex;
+  gap: 70px;
+  overflow: hidden;
+}
+
+.processIconsDiv .iconDiv{
+  width: 211px;
+  height: 100%;
+  border: 2px solid transparent;
+}
+
+.processIconsDiv .iconDiv .circleDiv{
+margin: auto;
+width: 194px;
+height: 194px;
+border-radius: 50%;
+border: 4px solid rgb(200, 199, 199);
+margin-top: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.processIconsDiv .iconDiv .circleDiv::after{
+  content: "";
+  position: absolute;
+  top:50%;
+  left: 100%;
+  height: 4px;
+  width: 90px;
+  background-color: rgb(184, 177, 177);
+}
+
+.countRoundDiv{
+position: absolute;
+top: -26px;
+margin: auto;
+height: 46px;
+width: 46px;
+border-radius: 50%;
+background-color: #febd19;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 22px;
+font-weight: 600;
+}
+
+.iconDiv h1{
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 30px;
+  color: #0a0a0a;
+}
+
+.iconDiv pre{
+  font-size: 21px;
+  margin-top: 14px;
+}
+
+.aboutDiv{
+  height: 738px;
+  width: 100%;
+  border: 2px solid transparent;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.aboutDiv h1{
+  font-size: 60px;
+  font-weight: 600;
+  color: rgb(96, 137, 35);
+  margin-top: 50px;
+}
+
+.aboutDiv pre{
+  font-size: 19px;
+  font-weight: 500;
+  color: rgb(159, 156, 156);
+  margin-top: 12px;
+  margin-bottom: 52px;
+} 
+
+.peopleReviewsDiv {
+  width: 1602px;
+  height: 398px;
+  border: 2px solid transparent;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.review{
+  width: 801px;
+  height: 198px;
+  /* border: 2px solid black; */
+  display: flex;
+}
+
+.profileDiv{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  /* border: 2px solid orange; */
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.profileDiv img{
+  width: 140%;
+  height: 140%;
+  border-radius: 50%;
+}
+
+.reviewRightDiv{
+  height: 100%;
+  width: 550px;
+  margin-left: 65px;
+  /* border: 2px solid purple; */
+  text-align: left;
+}
+
+.reviewRightDiv h1{
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a0a0a;
+  margin-top: 20px;
+}
+
+.reviewRightDiv pre{
+  font-size: 19px;
+  font-weight: 500;
+  color: rgb(13, 12, 12);
+  margin-top: 12px;
+  margin-bottom: 52px;
+} 
+
+.skillsDiv{
+  width: 100%;
+  height: 673px;
+  border: 2px solid transparent;
+  text-align: center;
+  background-color: white;
+}
+
+.skillsDiv h1{
+margin-top: 60px;
+font-size: 60px;
+font-weight: 600;
+color: rgb(101, 150, 16);
+}
+
+.skillsDiv pre{
+  margin-top: 16px;
+font-size: 18px;
+font-weight: 600;
+color: rgb(185, 187, 181);
+}
+
+.circleProgessDiv{
+  width: 1335px;
+  height: 350px;
+  border: 2px solid transparent;
+margin: auto;
+margin-top: 55px;
+display: flex;
+gap: 93px;
+}
+
+.borderCircle{
+width: 232px;
+height: 232px;
+margin-top: 24px;
+margin-left: 20px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.topBorderCircle{
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.innerBorderCircle{
+  width: 190px;
+  height: 190px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 38px;
+  font-weight: 800;
+}
+
+.progressCard{
+  width: 257px;
+  height: 100%;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.progressCard h1{
+margin-top: 54px;
+font-size: 24px;
+font-weight: 600;
+color: black;
+}
+
+.contactDiv{
+  width: 100%;
+  height: 470px;
+  border: 2px solid transparent;
+  text-align: center;
+  background-color: #8dc73f;
+}
+
+  .contactDiv h1 {
+    font-size: 86px;
+    font-weight: 700;
+    margin-top: 66px;
+    color: white;
+}
+
+.contactInputDiv {
+  width: 1406px;
+  height: 79px;
+  border: 2px solid transparent;
+  margin: auto;
+  margin-top: 45px;
+  text-align: left;
+  display: flex;
+  gap: 35px;
+}
+
+.contactInputDiv input{
+  width: 335px;
+  height: 70px;
+  border: none;
+  padding-left: 12px;
+  font-size: 25px;
+  border-radius: 8px;
+}
+
+.contactInputDiv button{
+  width: 267px;
+  height: 70px;
+  background-color: #febd19;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.contactDiv pre{
+  margin-top: 45px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contactUsDiv{
+  width: 100%;
+  height: 890px;
+  border: 2px solid transparent;
+  background-color: white;
+  text-align: center;
+}
+
+.contactUsDiv h1{
+margin-top: 54px;
+font-size: 61px;
+font-weight: 600;
+}
+
+.contactUsDiv pre{
+  margin-top: 14px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #bdbec1;
+  margin-bottom: 30px;
+}
+
+.mapH1{
+  width: 1330px;
+  height: 55px;
+  border: 2px solid transparent;
+  margin: auto;
+  display: flex;
+}
+
+.mapIcon{
+  width: 40px;
+  height: 50px;
+  border: 2px solid transparent;
+}
+
+.mapH1 p{
+  text-align: left;
+margin-left: 15px;
+margin-top: 8px;
+font-size: 30px;
+font-weight: 500;
+}
+
+.mapPhone1{
+  width: 1120px;
+  height: 45px;
+  border: 2px solid transparent;
+  margin: auto;
+  text-align: left;
+  display: flex;
+}
+
+.mapPhone1 p{
+  margin-left: 8px;
+  font-size: 37px;
+  font-weight: 600;
+}
+
+.googleMap{
+  width: 100%;
+  height: 520px;
+  border: 2px solid transparent;
+  margin-top: 54px;
+}
+
+.googleMap iframe{
+  width: 100%;
+  height: 100%;
+}
+
+footer{
+  width: 100%;
+  height: 505px;
+  border: 2px solid transparent;
+  padding-top: 76px;
+  display: flex;
+  background-color: #668e19;
+}
+
+.firstDiv{
+  width: 320px;
+  height: 350px;
+  border: 2px solid transparent;
+  margin-left: 122px;
+}
+
+.firstDiv img{
+  width: 210px;
+}
+
+.firstDiv pre{
+  margin-top: 17px;
+  font-size:21px;
+  font-weight: 600;
+  line-height: 20px;
+  color: white;
+}
+
+.firstDiv .copyright{
+  margin-top: 90px;
+  font-size: 27px;
+  font-weight: 600;
+  margin-left: 9px;
+  color: white;
+}
+
+.secondDiv{
+  width: 288px;
+  height: 340px;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  border-right: 2px solid #7bad2d;
+}
+
+.secondDiv h1{
+margin-top: -2px;
+color: white;
+}
+
+.secondDiv ul{
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.secondDiv ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 2px;
+}
+
+.secondDiv ul li a{
+  color: white;
+}
+
+.secondDiv p{
+  color: white;
+  font-size: 22px;
+}
